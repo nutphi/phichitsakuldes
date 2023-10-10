@@ -74,7 +74,8 @@ h2 {
 }
 
 .project-grid .project-grid-item:nth-child(5),
-.project-grid .project-grid-item:nth-child(6) {
+.project-grid .project-grid-item:nth-child(6),
+.project-grid .project-grid-item:nth-child(7) {
     grid-column: span 2;
 }
 
