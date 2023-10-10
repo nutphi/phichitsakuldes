@@ -33,17 +33,20 @@ nav {
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
     text-align: center;
+    padding: 15px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    padding: 2px;
+    background: linear-gradient(-40deg, #aaa 20%, #ccc 30%, #eee 40%);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
 }
 
 nav ul li a {
-    color: white;
+    color: black;
     text-decoration: none;
     text-wrap: nowrap;
     font-weight: bold;
@@ -63,20 +66,14 @@ h2 {
 
 .project-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 2fr;
-    gap: 10px;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
     align-items: self-start;
     margin-bottom: 40px;
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.project-grid .project-grid-item:nth-child(5),
-.project-grid .project-grid-item:nth-child(6),
-.project-grid .project-grid-item:nth-child(7) {
-    grid-column: span 2;
 }
 
 iframe {
@@ -89,8 +86,8 @@ iframe {
     overflow: hidden;
 }
 .project-video {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,10 +130,37 @@ footer {
 }
 
 
-/* Responsive grid for smaller screens */
-@media (max-width: 768px) {
+/* Responsive grid for medium screens */
+@media (min-width: 768px) {
+    .project-video {
+        height: 360px;
+        width: auto;
+    }
     .project-grid {
-        grid-template-columns: 1fr;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-details h3,
+    .project-details p {
+        margin: 10px 0;
+    }
+    .project-grid .project-grid-item:nth-child(5),
+    .project-grid .project-grid-item:nth-child(6),
+    .project-grid .project-grid-item:nth-child(7) {
+        grid-column: span 2;
+    }
+}
+
+/* Responsive grid for big screens */
+@media (min-width: 960px) {
+    .project-video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr 2fr 1fr 2fr;
     }
 
     .project-details h3,
