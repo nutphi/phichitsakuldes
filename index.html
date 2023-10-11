@@ -5,11 +5,13 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Nuttakit P. - Profile</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
       <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
     <header>
-      <img src="./images/me.jpg" alt="My Art Photo" style="width:150px;border-radius:50%;"> <!-- Profile Picture -->
+      <img src="./images/me.jpg" alt="My Art Photo"> <!-- Profile Picture -->
       <h1>Nuttakit P.</h1>
       <p>Angular Frontend Developer</p>
     </header>
@@ -31,59 +33,112 @@
     </section>
     <section id="projects">
       <h2>Personal Projects</h2>
-      <div class="project-grid">  <!-- Added project-grid container -->
-        <img class="project-grid-item project-image" src="./images/chat-proj.gif" alt="Personal Chatbot"> 
-        <div class="project-grid-item project-details">
-          <h3>Personal Chatbot <img src="./images/robot.png" style="width:15px;"></h3>
-          <p class="date"><b>September 2023 - October 2023</b></p>
-          <p><b>Description:</b></p>
-          <ul><li>Developed an AI chatbot website to answer questions about myself</li></ul>
-          <p><b>Technologies Used:</b></p>
-          <ul><li><b>Angular</b>, Node.js, Express, Firebase, Google Makersuite, Github, Github Actions</li></ul>
-          <p class="view"><a href="https://chat.phichitsakuldes.com" target="_blank">View Project</a></p>
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-md-4 text-center mb-3">
+            <img class="project-grid-item project-image" src="./images/chat-proj.gif"
+              width="200" alt="Personal Chatbot">
+          </div>
+          <div class="col-md-8 project-grid-item project-details">
+            <h3>Personal Chatbot <img src="./images/robot.png" style="width:15px;"></h3>
+            <p class="date"><b>September 2023 - October 2023</b></p>
+            <p><b>Description:</b></p>
+            <ul>
+              <li>Developed an AI chatbot website to answer questions about myself</li>
+            </ul>
+            <p><b>Technologies Used:</b></p>
+            <ul>
+              <li><b>Angular</b>, Node.js, Express, Firebase, Google Makersuite, Github, Github Actions</li>
+            </ul>
+            <p class="view"><a href="https://chat.phichitsakuldes.com" target="_blank">View Project</a></p>
+          </div>
         </div>
-        <img class="project-grid-item project-image" src="./images/calendar-proj.gif" alt="Lucky Color Chinese Calendar">
-        <div class="project-grid-item project-details">
-          <h3>Lucky Color Chinese Calendar</h3>
-          <p><b>January 2023 - May 2023</b></p>
-          <p><b>Description:</b></p>
-          <ul><li>Developed a mobile app that recommends clothing colors based on the Chinese element associated with each day. Handled both frontend and backend development and deployed the app to Firebase, and deployed them.</li></ul>
-          <p><b>Technologies Used:</b></p>
-          <ul>
-            <li><b>Angular 14</b>, Node.js, Express, Firebase, Admob, <b>Angular Capacitor for Android and iOS compatibility</b></li>
-          </ul>
-          <p class="view"><a href="https://clothes-color.phichitsakuldes.com" target="_blank">View Project</a></p>
+        <div class="row mb-3">
+          <div class="col-md-4 text-center mb-3"><img class="project-grid-item project-image"
+              src="./images/calendar-proj.gif" width="200" alt="Lucky Color Chinese Calendar"></div>
+          <div class="col-md-8 project-grid-item project-details">
+            <h3>Lucky Color Chinese Calendar</h3>
+            <p><b>January 2023 - May 2023</b></p>
+            <p><b>Description:</b></p>
+            <ul>
+              <li>Developed a mobile app that recommends clothing colors based on the Chinese element associated with
+                each
+                day. Handled both frontend and backend development and deployed the app to Firebase, and deployed them.
+              </li>
+            </ul>
+            <p><b>Technologies Used:</b></p>
+            <ul>
+              <li><b>Angular 14</b>, Node.js, Express, Firebase, Admob, <b>Angular Capacitor for Android and iOS
+                  compatibility</b></li>
+            </ul>
+            <p class="view"><a href="https://clothes-color.phichitsakuldes.com" target="_blank">View Project</a></p>
+          </div>
         </div>
-        <div class="project-grid-item project-video">
-          <iframe src="https://www.youtube.com/embed/_Wui-HkeIak" alt="Tv Show Tracker"></iframe>
+        <div class="row mb-3">
+          <div class="col-md-4 project-grid-item mb-3">
+            <iframe src="https://www.youtube.com/embed/_Wui-HkeIak" alt="Tv Show Tracker" width="200"
+              height="200"></iframe>
+          </div>
+          <div class="col-md-8 project-grid-item project-details">
+            <h3>Tv Show Tracker</h3>
+            <p><b>July 2023 - August 2023</b></p>
+            <p><b>Description:</b></p>
+            <ul>
+              <li>Developed a tvshow tracker app to track vdo you like with Angular 16 technique</li>
+            </ul>
+            <p><b>Technologies Used:</b></p>
+            <ul>
+              <li><b>Angular 16, Angular Signal</b>, Node.js, Cloudflare Page</li>
+            </ul>
+            <p class="view"><a href="https://tvshow-tracker.phichitsakuldes.com" target="_blank">View Project</a></p>
+          </div>
         </div>
-        <div class="project-grid-item project-details">
-          <h3>Tv Show Tracker</h3>
-          <p><b>July 2023 - August 2023</b></p>
-          <p><b>Description:</b></p>
-          <ul><li>Developed a tvshow tracker app to track vdo you like with Angular 16 technique</li></ul>
-          <p><b>Technologies Used:</b></p>
-          <ul>
-            <li><b>Angular 16, Angular Signal</b>, Node.js, Cloudflare Page</li>
-          </ul>
-          <p class="view"><a href="https://tvshow-tracker.phichitsakuldes.com" target="_blank">View Project</a></p>
+        
+        <div class="row mb-3">
+          <div class="col-md-4 project-grid-item">
+            <div class="mb-3 row">
+              <div class="col-md-6 pr-0 pl-0 mb-1">
+                <img class="project-image rounded-lg" src="./images/3d1.gif" alt="3d Studies" height="140">
+              </div>
+              <div class="col-md-6 pr-0 pl-0 mb-1">
+                <img class="project-image rounded-lg" src="./images/3d2.gif" alt="3d Studies" height="140">
+              </div>
+              <div class="col-md-6 pr-0 pl-0 mb-1 text-center">
+                <img class="project-image rounded-lg" src="./images/3d3.gif" alt="3d Studies" height="140">
+              </div>
+              <div class="col-md-6 pr-0 pl-0 mt-1">
+                <img class="project-image rounded-lg" src="./images/3d4.gif" alt="3d Studies" height="140">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 project-grid-item project-details">
+            <h3>3D Studies Project</h3>
+            <p><b>Feburary 2022 - October 2023</b></p>
+            <p><b>Description:</b></p>
+            <ul>
+              <li>Developed 3d object for studies</li>
+            </ul>
+            <p><b>Technologies Used:</b></p>
+            <ul>
+              <li><b>Angular</b>, Node.js, Firebase hosting, Github Action, Threejs, cannonjs, shader</li>
+            </ul>
+            <p class="view"><a href="https://3d-study.phichitsakuldes.com" target="_blank">View Project</a></p>
+          </div>
         </div>
-        <div class="project-grid-item project-details">
-          <h3>3D Studies Project</h3>
-          <p><b>Feburary 2022 - October 2023</b></p>
-          <p><b>Description:</b></p>
-          <ul><li>Developed 3d object for studies</li></ul>
-          <p><b>Technologies Used:</b></p>
-          <ul>
-            <li><b>Angular</b>, Node.js, Firebase hosting, Github Action, Threejs, cannonjs, shader</li>
-          </ul>
-          <p class="view"><a href="https://3d-study.phichitsakuldes.com" target="_blank">View Project</a></p>
+        <div class="row mb-3">
+          <div class="col-md-4 project-grid-item mb-3">
+            <img class="project-image" src="./images/pokemon.gif" alt="Pokemon Card Game"> 
+          </div>
+          <div class="col-md-8 project-grid-item project-details">
+            <h3>Pokemon Card Game</h3>
+            <p class="date"><b>July 2018 - August 2018</b></p>
+            <p><b>Description:</b></p>
+            <ul><li>Developed a pokemon card game with Design Pattern Technique</li></ul>
+            <p><b>Technologies Used:</b></p>
+            <ul><li>Java, Maven, JUnit</li></ul>
+            <p class="view"><a href="https://github.com/nutphi/PokemonCardGame" target="_blank">View Project</a></p>
+          </div>
         </div>
-        <div class="project-grid-item group-image">
-          <img class="project-image" src="./images/3d1.gif" alt="3d Studies">
-          <img class="project-image" src="./images/3d2.gif" alt="3d Studies">
-        </div>
-        <img class="project-grid-item project-image" src="./images/3d3.gif" alt="3d Studies">
       </div>
     </section>
     <section id="skills">
