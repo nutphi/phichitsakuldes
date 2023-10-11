@@ -163,6 +163,15 @@ footer {
         grid-template-columns: 1fr 2fr 1fr 2fr;
     }
 
+    .project-grid-item.group-image {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .project-grid-item.group-image img {
+        margin-bottom: 1px;
+    }
+
     .project-details h3,
     .project-details p {
         margin: 10px 0;
