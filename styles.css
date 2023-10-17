@@ -118,9 +118,8 @@ iframe {
     box-shadow: 4px 4px 4px var(--blue);
     text-decoration: none;
 }
-
 #contact p {
-  padding-left: 20px;
+  margin-bottom: 20px;
 }
 
 p img {
@@ -152,6 +151,9 @@ footer {
     .project-grid .project-grid-item:nth-child(6),
     .project-grid .project-grid-item:nth-child(7) {
         grid-column: span 2;
+    }
+    #contact p {
+        padding-left: 20px;
     }
 }
 
